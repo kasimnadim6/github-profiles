@@ -1,0 +1,45 @@
+.form{
+    display: flex;
+    &__group{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        margin-right: 2rem;
+    }
+
+    &__input{
+        padding: 1rem;
+        border: none;
+        outline: none;
+        font-family: inherit;
+        border-radius: 3px;
+        border-bottom: 3px solid rgb(202, 200, 200);
+
+        ::-webkit-input-placeholder{
+            color: red;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color: black, $alpha: 0.1);
+            border-bottom: 3px solid #55c57a;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid #ff7730;
+        }
+    }
+
+
+    &__label{
+        margin-top: 0.6rem;
+        margin-left: 1rem;
+        transition: all 0.3s;
+    }
+
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-3.5rem);
+    }
+}

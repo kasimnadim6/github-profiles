@@ -1,0 +1,21 @@
+.btn-add {
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right bottom, rgba(#7ed56f, 1), rgba(#28b485, 1));
+    width: 15rem;
+    height: 3.5rem;
+    border-radius: 3px;
+    color: rgb(87, 85, 85);
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+        transform: translateY(-0.3rem);
+    }
+
+    &:active{
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+    }
+}

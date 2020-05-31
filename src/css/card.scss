@@ -1,0 +1,48 @@
+.card {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+.github-profile {
+    display: flex;
+    align-items: center;
+    background-color: #777;
+    min-width: 40rem;
+    border-radius: 5px;
+    box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: 0.2);
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    &:hover {
+        transform: translateY(-0.3rem);
+    }
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+    }
+    .profile-img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 5px;
+    }
+    .info {
+        margin: 0 1.5rem;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        &__name {
+            font-size: 1.8rem;
+        }
+        &__company {
+            margin-top: 0.5rem;
+            font-size: 1.3rem;
+        }
+    }
+}
